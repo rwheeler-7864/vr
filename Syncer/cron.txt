@@ -1,0 +1,4 @@
+#set to run at 3am each day, first one for every 5 minutes for testing.
+#*/5 * * * * /home/pi/abii_development/hulk/Syncer/update.sh 1> /dev/null 2> /home/pi/abii_development/cron.log
+0 1,6 * * * /home/pi/abii_development/hulk/Syncer/update.sh 1> /dev/null 2>> /home/pi/abii_development/cron.log
+0 0 15 * * /home/pi/abii_development/hulk/Syncer/simple_log_rotate.sh
